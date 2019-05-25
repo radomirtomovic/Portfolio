@@ -1,37 +1,104 @@
 @import url('https://fonts.googleapis.com/css?family=Montaga&display=swap');
+
 @mixin bg {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 $text-color: #ffffff;
-$font: 'Montserrat', sans-serif;
-$transparent: rgba(255, 255, 255, 0.3);
-*, *::before, *::after {
+$font: 'Montserrat',sans-serif;
+$transparent: rgba(0, 0, 0, 0.5);
+$main: #003a51;
+
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-a{
-    text-decoration: none;
+
+body, a {
+    font-size: 20px;
+    font-family: $font;
     color: $text-color;
 }
-ul{
+
+a {
+    text-decoration: none;
+    // color: $text-color;
+}
+
+ul {
     list-style: none;
 }
-#header{
+
+#header {
     background-image: url(../images/background-header.jpg);
     @include bg;
     width: 100%;
-    height: 600px;
+    height: 657px;
+
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // text-align: center;
+    // padding-top: 50px;
+    #intro {
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+            // color: $text-color;
+            text-transform: uppercase;
+            padding: 20px;
+            width: 100%;
+
+        }
+    }
+}
+
+#nav {
+    align-items: center;
     display: flex;
-    // align-items: center;
-    padding-top: 50px;
-    h1{
-        color: $text-color;
-        font-family: $font;
-        text-transform: uppercase;
-        // background-color: $transparent;
-        padding: 20px;
-        width: 100%;
+    justify-content: space-evenly;
+    padding: 20px;
+    width: 100%;
+    transition: 500ms ease-in-out;
+    height: 10%;
+
+
+    &:hover {
+        background-color: $transparent;
+        height: 15%;
+    }
+}
+#about{
+    width: 100%;
+    height: 500px;
+    background-color: $main;
+    padding: 50px 0px;
+    &-pic{
+        height: 300px;
+        text-align: center;
+        img{
+            height: 300px;
+            width: 300px;
+            border:5px solid $text-color;
+            border-radius: 50%;
+        }
+    }
+    &-text{
+        margin: 20px auto;
+        width: 80%;
+        h2{
+            text-align: center;
+            margin: 15px;
+        }
+        p{
+            text-align: justify;
+        }
     }
 }
