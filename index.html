@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,15 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Radomir Tomović</title>
-  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
 </head>
 
 <body>
   <div id="header">
     <ul id="nav">
       <li><a href="#about">About</a></li>
-      <li><a href="#Projects">Projects</a></li>
-      <li><a href="#Contact">Contact</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
     <div id="intro">
       <h1>Welcome</h1>
@@ -27,11 +29,54 @@
     </div>
     <div id="about-text">
       <h2>About me:</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque obcaecati neque cum officia minus. Accusantium soluta cum velit quisquam. Sint nesciunt consequuntur consectetur modi! Enim nobis odio nemo possimus accusamus?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque obcaecati neque cum officia minus.
+        Accusantium soluta cum velit quisquam. Sint nesciunt consequuntur consectetur modi! Enim nobis odio nemo
+        possimus accusamus?</p>
     </div>
   </div>
-  <div>
+  <div id="projects">
 
+  </div>
+  <div id="contact">
+    <div id="contact-text">
+      <h2>Contact me</h2>
+      <p>Thanks for taking an interest in my skills!
+        Unfortunately I am not currently looking for consistent
+        freelance work, but I am open to one-off projects such as
+        logos, wedding invitations, or illustration commissions.
+        Please either fill out the contact form on the right or email
+        me at <spam>rtomovic5@gmail.com</spam> and we can set up a
+        meeting either in person or over the phone.</p>
+    </div>
+
+    <form action="portfolio.php" method="POST">
+      <input type="text" name="fname" id="fname" placeholder="First name" />
+      <input type="text" name="lname" id="lname" placeholder="Last name" />
+      <input type="email" name="email" id="email" placeholder="E-mail adress" />
+      <input type="tel" name="phone" id="phone" placeholder="Phone number" />
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <input type="submit" name="submit" value="submit" />
+    </form>
+  </div>
+  <div id="footer">
+    <h2>Follow me on medias</h2>
+    <ul>
+      <li>
+        <a href="https://www.youtube.com"><i class="fab fa-youtube"></a></i>
+      </li>
+      <li>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></a></i>
+      </li>
+      <li>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></a></i>
+      </li>
+      <li>
+        <a href="https://www.snapchat.com"><i class="fab fa-snapchat-ghost"></a></i>
+      </li>
+      <li>
+        <a href="https://www.github.com/radomirtomovic"><i class="fab fa-github-square"></a></i>
+      </li>
+    </ul>
   </div>
 </body>
 

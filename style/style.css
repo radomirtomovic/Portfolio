@@ -104,4 +104,62 @@ ul {
 #about-text p {
   text-align: justify;
 }
+
+#footer {
+  background-color: #272727;
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#footer h2 {
+  margin: 20px;
+}
+
+#footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px auto;
+  width: 100%;
+}
+
+#footer ul .fab {
+  font-size: 50px;
+}
+
+#footer ul .fa-youtube {
+  color: #ff0000;
+}
+
+#footer ul .fa-instagram {
+  color: #DA86A1;
+}
+
+#footer ul .fa-facebook-f {
+  color: #3B5A9B;
+}
+
+#footer ul .fa-snapchat-ghost {
+  color: #FFFC00;
+}
+
+#footer ul .fa-github-square {
+  color: #007D00;
+}
 /*# sourceMappingURL=style.css.map */
