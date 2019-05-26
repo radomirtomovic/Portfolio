@@ -10,6 +10,8 @@ $font: 'Montserrat',
 sans-serif;
 $transparent: rgba(0, 0, 0, 0.5);
 $main: #003a51;
+$align-h: center;
+$align-p: justify;
 
 *,
 *::before,
@@ -47,7 +49,7 @@ ul {
     // padding-top: 50px;
     #intro {
 
-        text-align: center;
+        text-align: $align-h;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -86,11 +88,11 @@ ul {
 
     &-pic {
         height: 300px;
-        text-align: center;
+        text-align: $align-h;
 
         img {
-            height: 300px;
-            width: 300px;
+            height: 250px;
+            width: 250px;
             border: 5px solid $text-color;
             border-radius: 50%;
         }
@@ -101,20 +103,38 @@ ul {
         width: 80%;
 
         h2 {
-            text-align: center;
+            text-align: $align-h;
             margin: 15px;
         }
 
         p {
-            text-align: justify;
+            text-align: $align-p;
         }
+    }
+}
+#contact{
+    margin: 50px 0px;
+    display: flex;
+    padding: 20px;
+    &-text{
+        color: #000000;
+        flex: 1;
+        text-align: $align-p;
+        padding: inherit;
+        h2{
+
+        }
+    }
+    form{
+        flex: 1;
+        padding: inherit;
     }
 }
 
 #footer {
     background-color: #272727;
     width: 100%;
-    text-align: center;
+    text-align: $align-h;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
