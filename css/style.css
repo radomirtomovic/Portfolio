@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Montaga&display=swap");
 form {
-  background-color: #424242;
+  height: 100%;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  background-color: #424242;
   padding: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,13 +13,64 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 320px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 45px auto;
+}
+
+form .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1200px) {
+  form .wrapper {
+    height: 300px;
+  }
+}
+
+@media (max-width: 1200px) {
+  form .wrapper {
+    display: block;
+  }
+}
+
+form .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 350px;
+}
+
+@media (min-width: 1200px) {
+  form .container {
+    height: 100%;
+  }
+  form .container:last-child {
+    margin-left: 50px;
+  }
 }
 
 form .container .group {
   position: relative;
-  margin: 45px 0;
 }
 
 form .container .group input,
@@ -55,6 +107,13 @@ form .container .group textarea:focus ~ .bar:before {
 
 form .container .group textarea {
   resize: none;
+  width: 320px;
+}
+
+@media (max-width: 1200px) {
+  form .container .group textarea {
+    height: 150px;
+  }
 }
 
 form .container .group label {
@@ -150,16 +209,30 @@ form .btn .btn-box {
   padding: 20px;
 }
 
-#contact-text {
-  color: #000000;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  text-align: justify;
-  padding: inherit;
+@media (max-width: 768px) {
+  #contact {
+    display: block;
+  }
 }
 
-#contact-text p spam {
+#contact h2 {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#contact-text {
+  color: #000000;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  padding: inherit;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 1.2;
+  word-wrap: break-word;
+}
+
+#contact-text p span {
   font-weight: bold;
 }
 
@@ -244,6 +317,8 @@ ul {
   height: 500px;
   background-color: #003a51;
   padding: 50px 0px;
+  line-height: 1.2;
+  height: 650px;
 }
 
 #about-pic {

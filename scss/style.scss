@@ -96,6 +96,7 @@ ul {
   &-text {
     margin: 20px auto;
     width: 80%;
+    
 
     h2 {
       text-align: $align-h;
@@ -106,6 +107,11 @@ ul {
       text-align: $align-p;
     }
   }
+  line-height: 1.2;
+  height: 650px;
+  // @media (max-width: 991px) {
+  //   height: 700px;
+  // }
 }
 
 
