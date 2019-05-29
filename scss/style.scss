@@ -4,6 +4,10 @@
 
 @import "variables";
 
+@import "form-matirial";
+
+@import "contact";
+
 *,
 *::before,
 *::after {
@@ -12,7 +16,8 @@
   box-sizing: border-box;
 }
 
-body, a {
+body,
+a {
   font-size: 20px;
   font-family: $font;
   color: $text-color;
@@ -102,43 +107,7 @@ ul {
     }
   }
 }
-#contact {
-  margin: 50px 0px;
-  display: flex;
-  padding: 20px;
-  &-text {
-    color: #000000;
-    flex: 1;
-    text-align: $align-p;
-    padding: inherit;
-    h2 {
-    }
-    p{
-      spam{
-        font-weight: bold;
-      }
-    }
-  }
-  form {
-    background-color: $transparent;
-    flex: 1;
-    padding: inherit;
-    display: flex;
-    flex-direction: column;
-    .container {
-      display: flex;
-      justify-content: space-evenly;
-      width: 100%;
-      padding: 10px;
-      margin: 10px;
-      input {
-        margin: 10px;
 
-        flex: 1;
-      }
-    }
-  }
-}
 
 #footer {
   background-color: #272727;
@@ -147,34 +116,43 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+
   h2 {
     margin: 20px;
   }
+
   ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 50px auto;
     width: 100%;
+
     .fab {
       font-size: 50px;
     }
+
     .fa {
       &-youtube {
         color: #ff0000;
       }
+
       &-instagram {
         color: #da86a1;
       }
+
       &-facebook-f {
         color: #3b5a9b;
       }
+
       &-snapchat-ghost {
         color: #fffc00;
       }
+
       &-github-square {
         color: #007d00;
       }
     }
   }
 }
+
