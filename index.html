@@ -49,25 +49,28 @@
         meeting either in person or over the phone.</p>
     </div>
 
-    <form action="portfolio.php" method="POST">
+    <form action="" method="POST">
       <div class="container">
         <div class="group">
-          <input type="text" required="required" name="fname" /><span class="highlight"></span><span class="bar"></span>
+          <input type="text" required="required" name="fname" autocomplete="off" /><span class="highlight"></span><span
+            class="bar"></span>
           <label>First Name</label>
         </div>
         <div class="group">
-          <input type="text" required="required" name="lname" /><span class="highlight"></span><span class="bar"></span>
+          <input type="text" required="required" name="lname" autocomplete="off" /><span class="highlight"></span><span
+            class="bar"></span>
           <label>Last Name</label>
         </div>
         <div class="group">
-          <input type="email" required="required" name="email" /><span class="highlight"></span><span
+          <input type="email" required="required" name="email" autocomplete="off" /><span class="highlight"></span><span
             class="bar"></span>
           <label>E-mail</label>
         </div>
         <div class="group">
-          <textarea id="message" name="message" cols="30" rows="10"></textarea>
-          <span class="highlight"></sp><span class="bar"></span>
-            <label for="message">Message</label>
+          <textarea required="required" name="email" autocomplete="off" rows="10" cols="50"></textarea>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Message</label>
         </div>
       </div>
       <div class="btn-box">
@@ -95,34 +98,6 @@
         <a href="https://www.github.com/radomirtomovic" target="_blank"><i class="fab fa-github-square"></a></i>
       </li>
     </ul>
-  </div>
-  <div id="try-form">
-
-    <div class="wrapper">
-      <form>
-        <div class="group">
-          <input type="text" required="required" /><span class="highlight"></span><span class="bar"></span>
-          <label>Email</label>
-        </div>
-        <div class="group">
-          <input type="password" required="required" /><span class="highlight"></span><span class="bar"></span>
-          <label>Password</label>
-        </div>
-        <div class="group">
-          <input type="number" required="required" /><span class="highlight"></span><span class="bar"></span>
-          <label>Number</label>
-        </div>
-        <div class="group">
-          <textarea type="textarea" rows="5" required="required"></textarea><span class="highlight"></span><span
-            class="bar"></span>
-          <label>Message</label>
-        </div>
-        <div class="btn-box">
-          <button class="btn btn-submit" type="submit">submit</button>
-          <button class="btn btn-cancel" type="button">cancel</button>
-        </div>
-      </form>
-    </div>
   </div>
 </body>
 
