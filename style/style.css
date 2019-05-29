@@ -30,11 +30,12 @@ ul {
   height: 657px;
 }
 
-#header #intro {
+#header-text {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 80%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -44,7 +45,7 @@ ul {
           justify-content: center;
 }
 
-#header #intro h1 {
+#header-text h1 {
   text-transform: uppercase;
   padding: 20px;
   width: 100%;
@@ -65,6 +66,7 @@ ul {
   -webkit-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
   height: 10%;
+  position: absolute;
 }
 
 #nav:hover {
@@ -122,11 +124,42 @@ ul {
   padding: inherit;
 }
 
+#contact-text p spam {
+  font-weight: bold;
+}
+
 #contact form {
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact form .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+#contact form .container input {
+  margin: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 #footer {
@@ -172,18 +205,18 @@ ul {
 }
 
 #footer ul .fa-instagram {
-  color: #DA86A1;
+  color: #da86a1;
 }
 
 #footer ul .fa-facebook-f {
-  color: #3B5A9B;
+  color: #3b5a9b;
 }
 
 #footer ul .fa-snapchat-ghost {
-  color: #FFFC00;
+  color: #fffc00;
 }
 
 #footer ul .fa-github-square {
-  color: #007D00;
+  color: #007d00;
 }
 /*# sourceMappingURL=style.css.map */
