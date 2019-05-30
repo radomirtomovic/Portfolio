@@ -1,3 +1,4 @@
+@import "variables";
 form {
   $bg-color: #424242;
   $hl-color: #fff;
@@ -11,6 +12,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 20px;
   .wrapper {
     @media(min-width: 1200px) {
       height: 300px;
@@ -99,7 +101,7 @@ form {
   margin: 45px auto;
 
   .btn {
-    background: #fff;
+    background: $main;
     color: mix(black, $muted-color, 25%);
     border: none;
     padding: 10px 20px;
@@ -115,26 +117,24 @@ form {
       box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);
     }
     &.btn-link {
-      background: $hl-color;
-      color: mix(white, $hl-color, 80%);
+      background: $main;
+      color: mix($main, $hl-color, 80%);
       &:hover {
         background: darken($hl-color, 5%);
-        color: mix(white, $hl-color, 85%);
+        color: mix($main, $hl-color, 85%);
       }
     }
     &.btn-submit {
-      background: $hl-color;
-      color: mix(white, $hl-color, 70%);
+      background: $footer-bg;
+      color: $hl-color;
       &:hover {
-        background: darken($hl-color, 5%);
-        color: mix(white, $hl-color, 85%);
+        background-color: $main;
       }
     }
     &.btn-cancel {
       background: #eee;
       &:hover {
-        background: darken(#eee, 5%);
-        color: mix(black, $muted-color, 30%);
+        color: $main;
       }
     }
     .btn-box {

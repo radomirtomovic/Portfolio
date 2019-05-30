@@ -96,7 +96,6 @@ ul {
   &-text {
     margin: 20px auto;
     width: 80%;
-    
 
     h2 {
       text-align: $align-h;
@@ -114,51 +113,84 @@ ul {
   // }
 }
 
-
 #footer {
-  background-color: #272727;
+  background-color: $footer-bg;
   width: 100%;
   text-align: $align-h;
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
-
-  h2 {
-    margin: 20px;
+  padding: 0px 100px;
+  &-contact {
+    text-align: left;
+    flex: 1;
+    @media(max-width: 768px) {
+    }
+    p {
+      &:nth-child(odd) {
+        margin-top: 20px;
+      }
+      @media(max-width: 768px) {
+        &:last-child{
+          padding-bottom: 20px;
+        }
+      }
+    }
   }
-
-  ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 50px auto;
-    width: 100%;
-
-    .fab {
-      font-size: 50px;
+  #media {
+    h4 {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      flex: 1;
     }
 
-    .fa {
-      &-youtube {
-        color: #ff0000;
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 50px auto;
+      width: 100%;
+      .fab {
+        font-size: 30px;
       }
+      .fa {
+        &-youtube {
+          color: #ff0000;
+        }
 
-      &-instagram {
-        color: #da86a1;
+        &-instagram {
+          color: #da86a1;
+        }
+
+        &-facebook-f {
+          color: #3b5a9b;
+        }
+        &-github-square {
+          color: #007d00;
+        }
       }
-
-      &-facebook-f {
-        color: #3b5a9b;
-      }
-
-      &-snapchat-ghost {
-        color: #fffc00;
-      }
-
-      &-github-square {
-        color: #007d00;
+      @media (max-width: 768px) {
+        margin: 0px;
       }
     }
+
+    // 460, 768, 991, 1200, 1440
+    @media(max-width: 768px) {
+      margin-top: 30px;
+    }
+  }
+  @media (max-width: 700px) {
+    display: block;
+  
   }
 }
 
+#copyright {
+  width: 100%;
+  text-align: center;
+  background-color: $footer-bg;
+  padding-bottom: 30px;
+  @media(max-width: 768px) {
+    padding-top: 20px;
+  }
+}
