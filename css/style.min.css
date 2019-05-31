@@ -60,6 +60,8 @@ form .btn .btn-box { text-align: center; margin: 50px 0; }
 
 #contact-text p span { font-weight: bold; }
 
+#contact-text p a { color: #7171f3; text-decoration: underline; }
+
 *, *::before, *::after { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 body, a { font-size: 20px; font-family: "Montserrat", sans-serif; color: #ffffff; }

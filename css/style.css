@@ -235,6 +235,11 @@ form .btn .btn-box {
   font-weight: bold;
 }
 
+#contact-text p a {
+  color: #7171f3;
+  text-decoration: underline;
+}
+
 *,
 *::before,
 *::after {
