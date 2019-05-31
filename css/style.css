@@ -429,6 +429,10 @@ ul {
   color: #007d00;
 }
 
+#footer #media ul .fa-sass {
+  color: #febe89;
+}
+
 @media (max-width: 768px) {
   #footer #media ul {
     margin: 0px;
