@@ -351,6 +351,38 @@ ul {
   text-align: justify;
 }
 
+#skills {
+  text-align: center;
+  padding: 30px;
+  color: #272727;
+}
+
+#skills h2 {
+  margin-bottom: 20px;
+}
+
+#skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 30px;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  #skills ul {
+    display: block;
+  }
+}
+
+#skills ul .fab {
+  font-size: 100px;
+}
+
 #footer {
   background-color: #272727;
   width: 100%;
@@ -445,7 +477,7 @@ ul {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   #footer {
     display: block;
   }

@@ -92,6 +92,16 @@ ul { list-style: none; }
 
 #about-text p { text-align: justify; }
 
+#skills { text-align: center; padding: 30px; color: #272727; }
+
+#skills h2 { margin-bottom: 20px; }
+
+#skills ul { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; padding: 30px; width: 100%; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+@media (max-width: 768px) { #skills ul { display: block; } }
+
+#skills ul .fab { font-size: 100px; }
+
 #footer { background-color: #272727; width: 100%; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; padding: 0px 100px; }
 
 #footer-contact { text-align: left; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
@@ -120,7 +130,7 @@ ul { list-style: none; }
 
 @media (max-width: 768px) { #footer #media { margin-top: 30px; } }
 
-@media (max-width: 700px) { #footer { display: block; } }
+@media (max-width: 768px) { #footer { display: block; } }
 
 #copyright { width: 100%; text-align: center; background-color: #272727; padding-bottom: 30px; }
 
