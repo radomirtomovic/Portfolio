@@ -377,6 +377,9 @@ ul {
   #skills ul {
     display: block;
   }
+  #skills ul li {
+    margin-bottom: 30px;
+  }
 }
 
 #skills ul .fab {

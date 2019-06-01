@@ -127,6 +127,9 @@ ul {
     flex-wrap: wrap;
     @media(max-width: 768px) {
       display: block;
+      li{
+        margin-bottom: 30px;
+      }
     }
     .fab {
       font-size: 100px;
